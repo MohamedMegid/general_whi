@@ -1,5 +1,10 @@
 # Deploying Django with Docker Compose
 
-This is the finished source code for the tutorial [Deploying Django with Docker Compose](https://londonappdeveloper.com/deploying-django-with-docker-compose/).
+# Instructions
 
-In this tutorial, we teach you how to prepare and deploying a Django project to an AWS EC2 instance using Docker Compose.
+- docker-compose build
+- docker-compose up
+
+# Hint: use this command to run python manage.py package
+
+- docker-compose run --rm app sh -c "python manage.py ..."
