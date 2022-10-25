@@ -1,4 +1,4 @@
-version: '3.9'
+version: "3.9"
 
 services:
   app:
@@ -24,8 +24,8 @@ services:
       - db
 
   db:
-    image: postgres:13-alpine
+    image: mongo:4.0.4
     environment:
-      - POSTGRES_DB=devdb
-      - POSTGRES_USER=devuser
-      - POSTGRES_PASSWORD=changeme
+      - MONGO_DB=devdb
+      - MONGO_USER=devuser
+      - MONGO_PASSWORD=changeme

@@ -82,13 +82,18 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'HOST': os.environ.get('DB_HOST'),
-        'NAME': os.environ.get('DB_NAME'),
-        'USER': os.environ.get('DB_USER'),
-        'PASSWORD': os.environ.get('DB_PASS'),
-    }
+
+        'ENGINE': "djongo",
+        "HOST": os.environ.get('DB_HOST'),
+        "NAME": int(os.environ.get('DB_NAME')),
+        "USER": os.environ.get('DB_USER'),
+        "PASSWORD": os.environ.get('DB_PASS'),
+
+        }
 }
+
+
+
 
 
 # Password validation
@@ -114,7 +119,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
+A
 TIME_ZONE = 'UTC'
 
 USE_I18N = True

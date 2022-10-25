@@ -1,3 +1,7 @@
 Django>=3.2.3,<3.3
 psycopg2>=2.8.6,<2.9
 uWSGI>=2.0.19.1,<2.1
+pymongo==3.11.0
+mongoengine==0.20.0
+pylint-mongoengine==0.4.0
+dgongo>22.2.1=>22.3
